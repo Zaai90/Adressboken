@@ -9,8 +9,8 @@ while (true)
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine($"~: ADRESSBOKEN ({numberOfPeopleInList} personer, {contacts.Length} tecken) :~\n");
     Console.ResetColor();
-    Console.WriteLine("[V]isa personer");
-    Console.WriteLine("[L]ägg till person");
+    Console.WriteLine("[V]isa kontakter");
+    Console.WriteLine("[L]ägg till kontakt");
     Console.WriteLine("\n[A]vsluta [R]ensa adressboken");
 
     // Console.Write("\nVal: ");
@@ -19,7 +19,7 @@ while (true)
     if (choice == 'v')
     {
         Console.Clear();
-        Console.WriteLine(Environment.NewLine + contacts + Environment.NewLine + (contacts.Split("\n").Length - 1) + " personer totalt");
+        Console.WriteLine(Environment.NewLine + contacts + Environment.NewLine + (contacts.Split("\n").Length - 1) + " kontakt totalt");
         Console.ReadKey();
     }
     else if (choice == 'l')
